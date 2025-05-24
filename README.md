@@ -48,17 +48,13 @@
 
 Возможен локальный запуск тестов с помощью команд:
 
-./gradlew clean Test -DdeviceHost=real
-
-./gradlew clean Test -DdeviceHost=emulation
-
-./gradlew clean Test -DdeviceHost=browserstack
+./gradlew clean Test 
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="src/media/Jenkins.svg"> Сборка в Jenkins
 
 Для запуска сборки необходимо нажать кнопку <code>Build Now</code>.
 <p align="center">
-<img title="Jenkins Build" src="src/media/jenkinsbuildnow.png">
+<img title="Jenkins Build" src="src/media/JenkinsScreen.png">
 </p>
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
@@ -98,9 +94,4 @@
 
 <p align="center">
 <img width="70%" title="Telegram Notifications" src="src/media/telegramres.png">
-</p>
-
-## <img alt="Browserstack" height="25" src="src/media/images.jpeg" width="25"/></a> Видеопример выполнения теста Browserstack
-<p align="center">
-<img title="Browserstack Video" src="media/screenshots/browserstack.gif" width="350" height="350"  alt="video">   
 </p>
