@@ -12,7 +12,7 @@ import static io.restassured.http.ContentType.JSON;
 import static rest_assured.helpers.CustomAllureListener.withCustomTemplates;
 
 public class UserSpecs {
-    public static RequestSpecification loginRequestSpec = with()
+    public static final RequestSpecification loginRequestSpec = with()
             .filter(withCustomTemplates())
             .header("x-api-key", "reqres-free-v1")
             .log().uri()
@@ -20,17 +20,17 @@ public class UserSpecs {
             .log().headers()
             .contentType(JSON);
 
-    public static RequestSpecification userNotFoundSpec = with()
+    public static final RequestSpecification userNotFoundSpec = with()
             .header("x-api-key", "reqres-free-v1")
             .log().uri();
 
-    public static RequestSpecification updateUserSpec = with()
+    public static final RequestSpecification updateUserSpec = with()
             .header("x-api-key", "reqres-free-v1")
             .filter(withCustomTemplates())
             .log().uri()
             .contentType(JSON);
 
-    public static RequestSpecification deleteRequestSpec = with()
+    public static final RequestSpecification deleteRequestSpec = with()
             .header("x-api-key", "reqres-free-v1")
             .filter(withCustomTemplates())
             .log().uri()

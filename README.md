@@ -3,14 +3,14 @@
 
 ##  Содержание:
 
-- [Используемый стек](#используемый-стек)
-- [Запуск автотестов](#запуск-автотестов)
-    - [Сборка в Jenkins](#-сборка-в-jenkins)
-- [Пример Allure-отчета](#-пример-allure-отчета)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
-- [Интеграция с Jira](#-интеграция-с-jira)
-- [Уведомления в Telegram](#-уведомления-в-telegram-с-использованием-бота)
-- [Видео примера запуска тестов в BrowserStack](#-видео-примера-запуска-тестов-в-selenoid)
+- Используемый стек
+- Запуск автотестов
+- Сборка в Jenkins
+- Пример Allure-отчета
+- Интеграция с Allure TestOps
+- Интеграция с Jira
+- Уведомления в Telegram
+- Видео примера запуска тестов в BrowserStack
 
 ##  Используемый стек
 
@@ -50,7 +50,7 @@
 
 ./gradlew clean Test 
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="src/media/Jenkins.svg"> Сборка в Jenkins
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="/media/Jenkins.svg"> Сборка в Jenkins
 
 Для запуска сборки необходимо нажать кнопку <code>Build Now</code>.
 <p align="center">
@@ -58,14 +58,14 @@
 </p>
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="src/media/Allure_Report.svg"> Пример Allure-отчета
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="/media/Allure_Report.svg"> Пример Allure-отчета
 ### Overview
 
 <p align="center">
 <img title="Allure Overview" src="media/alreportscreen.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="src/media/AllureTestOps.svg"> Интеграция с Allure TestOps
+## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/AllureTestOps.svg"> Интеграция с Allure TestOps
 
 На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
 
@@ -80,7 +80,7 @@
 <img title="Test Results in Alure TestOps" src="media/res2.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Jira" src="src/media/Jira.svg"> Интеграция с Jira
+## <img width="4%" style="vertical-align:middle" title="Jira" src="/media/Jira.svg"> Интеграция с Jira
 
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 
@@ -88,7 +88,7 @@
 <img title="Test Results in Jira" src="media/jrares.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Telegram" src="src/media/Telegram.svg"> Уведомления в Telegram с использованием бота
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="/media/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
